@@ -10,30 +10,30 @@
 
 
 def main():
-    number = input('Please select a number (press Enter after number) ')
+    number = int(input('Please select a number (press Enter after number) '))
 
     # Check oddity
-    if int(number) % 2:
+    if number % 2:
         print('Chosen number is odd.')
     else:
         print('Chosen number is even.')
-        if not int(number) % 4:
+        if not number % 4:
             print('Chosen number is also multiple of 4.')
 
-    number_2 = input('Please select another number (press Enter after number) ')
+    number_2 = int(input('Please select another number (press Enter after number) '))
 
     # Check multiplicity
-    if int(number_2) > int(number):
-        if int(number_2) % int(number):
-            print('Number ' + number_2 + ' is not a multiple of ' + number + '.')
+    if number_2 > number:
+        if number_2 % number:
+            print('Number ' + str(number_2) + ' is not a multiple of ' + str(number) + '.')
         else:
-            print('Number ' + number_2 + ' is a multiple of ' + number + '.')
-    elif int(number_2) < int(number):
-        if int(number) % int(number_2):
-            print('Number ' + number_2 + ' is not a divisor of ' + number + '.')
+            print('Number ' + str(number_2) + ' is a multiple of ' + str(number) + '.')
+    elif number_2 < number:
+        if number % number_2:
+            print('Number ' + str(number_2) + ' is not a divisor of ' + str(number) + '.')
         else:
-            print('Number ' + number_2 + ' is a divisor of ' + number + '.')
-    elif int(number_2) == int(number):
+            print('Number ' + str(number_2) + ' is a divisor of ' + str(number) + '.')
+    elif number_2 == number:
         print('Both numbers are the same. They are simultaneously their own divisor and multiple.')
 
 
