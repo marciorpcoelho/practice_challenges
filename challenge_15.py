@@ -4,10 +4,15 @@
 
 def main():
     sentence = input('Please write a sentence with any number of words: ')
+
+    # Approach 1
     sentence_list = remove_spaces(sentence)
     new_sentence_list = switch_order_method2(sentence_list)
     new_sentence = join_sentence(new_sentence_list)
-    print('The reversed sentence is:', new_sentence)
+    print('A1: The reversed sentence is:', new_sentence)
+
+    # Approach 2
+    print('A2: The reversed sentence is:', ' '.join(sentence.split()[::-1]))
 
 
 def remove_spaces(sentence):
