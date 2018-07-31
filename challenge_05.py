@@ -41,6 +41,5 @@ def main():
         print('No common values.')
 
 
-
 if __name__ == '__main__':
     main()
