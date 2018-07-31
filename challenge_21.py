@@ -21,10 +21,5 @@ def main():
             open_file.write(content.get_text())
 
 
-
-def challenge_19():
-   print()
-
-
 if __name__ == '__main__':
     main()
