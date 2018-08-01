@@ -22,8 +22,7 @@
 def main():
     size = int(input('What is the size of the board to print? '))
 
-    # Method 1
-    # method_1(size)
+    method_1(size)
     method_2(size)
 
 
@@ -47,8 +46,6 @@ def method_2(size):
         print(horizontals)
         print(verticals)
     print(horizontals)
-
-
 
 
 if __name__ == '__main__':
