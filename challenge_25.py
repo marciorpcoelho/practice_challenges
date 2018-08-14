@@ -38,6 +38,5 @@ def victory_conditions(matrix):
     print('No one won, try again.')
 
 
-
 if __name__ == '__main__':
     main()
